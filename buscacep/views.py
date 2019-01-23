@@ -12,7 +12,7 @@ def novo_endereco(request):
         form = EnderecoForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('listar_enderecos')
+            return redirect('listar')
     else:
         form = EnderecoForm()
     return render(request, 'buscacep/novo.html', {'form': form})
