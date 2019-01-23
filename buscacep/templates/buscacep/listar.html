@@ -4,8 +4,10 @@
 {% for endereco in enderecos %}
 
 <h5>Localidade: {{ endereco.localidade }}</h5>
-<li>Logradouro: {{ endereco.logradouro }}</li>
-<li>Bairro: {{ endereco.bairro }}</li>
-<li>UF: {{ endereco.uf }}</li>
+<ul>
+    <li>Logradouro: {{ endereco.logradouro }}</li>
+    <li>Bairro: {{ endereco.bairro }}</li>
+    <li>UF: {{ endereco.uf }}</li>
+</ul>
 <hr/>
 {% endfor %}
