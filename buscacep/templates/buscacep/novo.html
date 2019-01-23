@@ -1,0 +1,8 @@
+{% block extrahead %}
+    {{ form.media }}
+{% endblock %}
+
+<form method="POST">
+    {{ form.as_p }}
+    <button type="submit">Enviar</button>
+</form>

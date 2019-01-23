@@ -1,0 +1,10 @@
+<p><a href="{% url 'novo_endereco' %}">Novo endereço</a></p>
+
+{% for endereco in enderecos %}
+<ul>
+    <li>Logradouro: {{ endereco.logradouro }}</li>
+    <li>Localidade: {{ endereco.localidade }}</li>
+    <li>Bairro: {{ endereco.bairro }}</li>
+    <li>UF: {{ endereco.uf }}</li>
+</ul>
+{% endfor %}
